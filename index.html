@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<header>
+  <div class="content">
+    <h1>Summing</h1>
+    <p>An electronic musician from Newcastle, Australia.</p>
+  </div>
+</header>
+<section id="rorschach">
+  <div class="content">
+    <div class="album-container">
+      <img src="img/rorschach.jpg" alt="Rorschach EP" class="album-large left" />
+      <div class="album-details left">
+        <h3 id="big-album-title">Rorschach</h3>
+        <p class="left">December 2014</p>
+        <p class="right">19 mins</p>
+
+        <a href="http://summing.bandcamp.com/album/rorschach" class="album-download clear">
+          Free download
+          <p>$5 Physical</p>
+        </a>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+    <p class="tip">Click track to play</p>
+    <ol class="tracklisting">
+      <li onclick="play(0)">Direct Ascent <span class="time">4:10</span><span class="elapsed"></span></li>
+      <li onclick="play(1)">Creator <span class="time">3:58</span><span class="elapsed"></span></li>
+      <li onclick="play(2)">Hegemony <span class="time">3:20</span><span class="elapsed"></span></li>
+      <li onclick="play(3)">The Charleston <span class="time">4:01</span><span class="elapsed"></span></li>
+      <li onclick="play(4)">Hart and Cohle <span class="time">3:54</span><span class="elapsed"></span></li>
+      <audio id="direct-ascent"></audio>
+      <audio id="creator"></audio>
+      <audio id="hegemony"></audio>
+      <audio id="charleston"></audio>
+      <audio id="hartandcohle"></audio>
+    </ol>
+  </div>
+</section>
+
+<section id="about">
+  <div class="content">
+    <h2>About</h2>
+    <p>Summing is the electronic music project of <a href="http://chrislawrence.co">Chris Lawrence</a>, a musician from Newcastle, Australia. His first album, <a href="http://summing.bandcamp.com/album/distant-cousin">Distant Cousin</a>, was released in July 2013. He has had the privelage of sharing the stage with the likes of <a href="https://www.facebook.com/lovelyheadmusic">Lovely Head</a>, <a href="https://www.facebook.com/timfitzmusic">Tim Fitz</a>, <a href="https://www.facebook.com/robertnedeljkovicsolo">King Single</a> and <a href="https://www.facebook.com/yonyonsonband">Yon Yonson</a>. Chris was once upon a time the guitarist and singer for <a href="http://longislandsound.com.au">Long Island Sound</a>. 
+    <h2>Contact</h2>
+    <p>Please like the <a href="http://facebook.com/summingco">Facebook</a> and follow the <a href="http://summingco.tumblr.com">Tumblr</a>. Email me at 
+
+  <script type="text/javascript">
+  //<![CDATA[
+  <!--
+  var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+  "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
+"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+"\"(3),6\\\"\\\\24\\\\06\\\\03\\\\\\\\26\\\\05\\\\00\\\\\\\\\\\\t4\\\\02\\\\" +
+"\\\\7H00\\\\\\\\33\\\\0I\\\\nF\\\\\\\\AFEOimp|shpkVt*vN1s~k!bnxni~ukvlakcA\\"+
+"\\\\\\\\\\\\\\A!36\\\\06\\\\02\\\\\\\\\\\\r1\\\\02\\\\\\\\03\\\\0V\\\\(W34\\"+
+"\\01\\\\02\\\\\\\\5_02\\\\\\\\14\\\\00\\\\00\\\\\\\\10\\\\06\\\\03\\\\\\\\3" +
+"4\\\\03\\\\01\\\\\\\\05\\\\03\\\\03\\\\\\\\16\\\\04\\\\02\\\\\\\\\\\\r7\\\\" +
+"00\\\\\\\\1#00\\\\\\\\7[01\\\\\\\\2+=4x605\\\\0e\\\\31<'3srm g)!#??;2i!+7.\\"+
+"\"\\\\\\\\\\\\[/\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarchx.e(odrChamCro.fn" +
+"griSt+=;o27=1y%){++;i<l;i=0(ior;fthnglex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(" +
+"n ioctun\\\"f)\")"                                                           ;
+  while(x=eval(x));
+  //-->
+  //]]>
+  </script>
+  for bookings and press.</p>
+  <h2>Past releases</h2>
+  <div class="past">
+    <a href="http://summing.bandcamp.com/album/distant-cousin">
+      <img src="/img/distantcousin.jpg" alt="Distant Cousin" class="album-small"/>
+      <h3>Distant Cousin (2013)</h3>
+    </a>
+  </div>
+</div>
+</section>
+
+<div class="player">
+  <i class="fa fa-backward" onclick="prevTrack()"></i>
+  <i class="fa fa-pause play-pause" onclick="pause()" ></i>
+  <i class="fa fa-play play-button" onclick="resume()"></i>
+  <i class="fa fa-forward" onclick="nextTrack()"></i>
+</div>

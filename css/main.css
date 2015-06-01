@@ -1,0 +1,257 @@
+body {
+  background: #f8f8f8;
+  color: #5a5a5a;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+}
+
+p {
+  line-height: 2.5;
+}
+
+header {
+  background-color: #444;
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+  background-position: top center;
+  padding-top: 10em;
+  padding-bottom: 5em;
+  text-align: center;
+  color: #ddd;
+  font-size: 1.5em;
+}
+
+h1 {
+  color: #A9D5B6;
+  font-family: 'SS Adec', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 4em;
+  letter-spacing: 0.7em;
+  margin: 0;
+  margin-left: 0.7em;
+  padding: 0;
+}
+
+a { 
+  text-decoration: none;
+  color: #111;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+#rorschach {
+  background-size: cover;
+  padding-top: 8em;
+}
+
+.album-container { margin-bottom: 4em; }
+
+.album-large {
+  width: 100%;
+  max-width: 500px;
+  margin-right: 5em;
+  border: 1em solid #eee;
+  box-sizing: border-box;
+}
+
+
+.album-details {
+  color: #a0a0a0;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  max-width: 350px;
+}
+
+h3 {
+  color: #5a5a5a;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.album-download {
+  text-align: center;
+  display: block;
+  background: #83C697;
+  color: #fff;
+  width: 100%;
+  padding: 0.7em 0;
+  line-height: 1.7;
+  margin-top: 10em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 6px solid #77B58A;
+}
+
+.album-download:hover {
+  background: #91DBA7;
+  text-decoration: none;
+}
+
+.album-download p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.tracklisting {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.tracklisting li { 
+  padding: 0.4em 2em;
+}
+
+.tracklisting li:hover {
+  background: #eee;
+}
+
+.tracklisting li.current {
+  background: #eee;
+}
+
+.time, .elapsed {
+  float: right;
+  color: #bbb;
+}
+
+.tip {
+  color: #bbb;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 2em 0;
+}
+
+#about {
+  background: #EDECE0;
+  padding: 5em 0;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  color: #C0BFB4;
+}
+
+#about h3 {
+  text-transform: none;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+#about p {
+  margin-bottom: 3.5em;
+}
+
+.past { text-align: center; }
+
+.album-small {
+  max-width: 250px;
+  margin-bottom: 1em;
+  border: 5px solid #E0DFD5;
+}
+
+a:hover .album-small { opacity: 0.8 }
+
+.player {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  display: none;
+}
+
+.player i {
+  margin: 0 1em;
+  font-size: 2em;
+}
+
+.play-pause {
+  display: inline;
+}
+
+.spinner {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes scaleout {
+  0% { -webkit-transform: scale(0.0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleout {
+  0% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .content {
+    width: 98%;
+    margin: 0 1%;
+  }
+  .left, .right { float: none; }
+
+  .album-container {
+    text-align: center;
+  }
+  .album-large { margin: 0 0 1.5em 0; }
+
+  .album-details { margin: 0 auto; }
+  .album-download { margin: 0; }
+
+
+
+}
