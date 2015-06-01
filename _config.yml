@@ -1,2 +1,3 @@
 ---
 destination: ~/apps/summing
+exclude: [Rakefile]
